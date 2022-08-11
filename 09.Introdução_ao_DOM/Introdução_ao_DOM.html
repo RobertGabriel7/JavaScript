@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introdução ao DOM</title>
+<style>
+    
+body{
+font: arial;
+background-color: rgb(71, 133, 220);
+color: aliceblue;
+}
+
+</style>
+</head>
+<body>
+<h1>Começando a usar o DOM</h1>
+<hr>
+<p>opa</p>
+<div>
+    <p><strong>Clique aqui</strong></p>
+    <hr>
+</div>
+
+
+<script>
+
+
+var r1=window.document.getElementsByTagName('p')[0]
+
+r1.style.color='black'
+
+window.document.write('veja a variavel: '+r1.innerText)
+
+
+
+
+
+
+</script>
+</body>
+</html>

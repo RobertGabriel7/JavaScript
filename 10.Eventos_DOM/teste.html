@@ -1,0 +1,56 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+h1{
+    text-align: center;
+color: aliceblue;
+}
+body{
+    background-color: rgb(154, 185, 203);
+color: aliceblue;
+}
+</style>
+</head>
+<body>
+<hr>
+    <h1>Somando valores</h1>
+    <hr>
+    <div>
+<input type="number" id="num1"> + 
+<input type="number" id="num2">
+<input type="button" value="Calcular" onclick="calc()">
+    </div>
+
+
+<script>
+
+
+function calc() {
+
+var r = Number.parseInt(window.document.getElementById('num1').value)
+var e = Number.parseInt(window.document.getElementById('num2').value)
+
+
+
+document.write(r+e)
+
+
+//document.write(r+e,'',n1)
+
+/*
+parseInt(r,e)
+
+var res = r+e;
+
+document.write('A Soma entre ',r,' e ',e,' é: ',res)
+*/
+}
+
+</script>
+
+</body>
+</html>

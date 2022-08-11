@@ -1,0 +1,49 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>10.Eventos_DOM</title>
+<style>
+
+div{
+    
+    line-height: 120px;
+    text-align: center;
+    background-color: aqua;
+    color: black;
+    width: 130px;
+    height: 120px;    
+}
+
+</style>
+</head>
+<body>
+
+<div id="teste" onclick="teste()" onmouseenter="entrou()" onmouseout="saiu()">
+
+    funcionado...    
+
+</div>
+<script>    
+
+var r = window.document.getElementById('teste')    
+function teste() {
+r.innerText = 'Clicou'
+r.style.backgroundColor = 'yellow'
+}
+function entrou() {
+
+    r.innerText = 'Entrou'
+}
+
+function saiu() {
+    r.innerText = 'Saiu'
+    r.style.backgroundColor = 'aqua'
+}    
+
+    
+    
+    </script>
+</body>
+</html>
