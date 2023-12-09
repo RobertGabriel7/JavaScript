@@ -1,0 +1,36 @@
+Operadores do JavaScrit:
+
+
+Aritméticos:
+
++ - * /(Resto da Divisão)  %(Divisão inteira) **(Potenciação)
+
+--Atribuição:
+
+var n = 3
+n = n + 4
+
+--Simplificação:
+Esse metodo só funciona se a variavel receber ela mesmo:
+
+n += 4 (n recebe a variavel n mais 4)
+x -= 1 (x recebe a variavel x menos 1)
+
+--Incremneto: 
+Semelhante ao exemplo acima, porém mais facil:
+
+
+Pós:
+x++ (x recebe x mais 1)
+x-- (x recebe x menos 1)
+
+Pré:
+++x (x recebe x mais 1)
+--x (x recebe x menos 1)
+
+
+Relacionais 
+Lógicos
+Ternário
+
+--------------

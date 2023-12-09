@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Java Script</title>
+
+    <style>
+
+        body{
+            background-color: bisque;
+        }
+                h1{
+                    color: rgb(17, 128, 128);
+                }
+            </style>
+
+</head>
+<body>
+    
+<h1>Olá World</h1>
+
+
+<script>
+
+/*
+
+var valor1 = number.parseInt(window.prompt("Digite o primeiro valor: ")) //Para converte a string em number int(eiro)
+
+var valor2 = number.parseFloat(window.prompt("Digite o segundo valor: ")) //Para converte a string em number float (real, com virgula)
+
+ou
+
+Number(variável) e precisa ser com a primeira letra maiuscula do Number
+
+*/
+
+var valor1 = Number(window.prompt("Digite o primeiro valor: ")) //Para converte a string em number int(eiro)
+var valor2 = Number(window.prompt("Digite o segundo valor: ")) //Para converte a string em number float (real, com virgula)
+
+var soma = valor1 + valor2
+
+/*
+O sinal de + pode servir para concatenação e adição
+Para fazer uma soma, precisa especificar para o javaScript que o valor digitado é um number.
+Exemplo:
+
+Number + Number = adição
+
+Para fazer a concatenação, precisa só colocar o sinal de +
+Exemplo:
+
+String + String = concatenação
+*/
+
+window.alert("A soma entre os dois valores é: " + soma )
+
+</script>
+
+</body>
+</html>

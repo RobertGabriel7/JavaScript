@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Java Script</title>
+
+    <style>
+
+        body{
+            background-color: bisque;
+        }
+                h1{
+                    color: rgb(17, 128, 128);
+                }
+            </style>
+
+</head>
+<body>
+    
+<h1>Olá World</h1>
+
+
+<script>
+
+/*Quando digitado, o valor recebido pela variável é do tipo string*/
+
+var valor1 = Number(window.prompt("Digite o primeiro valor: ")) 
+var valor2 = Number(window.prompt("Digite o segundo valor: ")) 
+
+/*Com a tag Number, valor string is convertido in Number*/
+
+var soma = valor1 + valor2
+
+/*
+
+Para converte a number in string: 
+
+Variável.toString()
+
+or 
+
+String(variável)
+
+window.alert("Result: " + soma.toString())
+
+*/
+
+
+
+window.alert(`A soma entre ${valor1} + ${valor2} é: ` + String(soma))
+
+/*Utilizando crase `, sifrão $ e chaves {}, torna mais fácil com o template string */
+
+
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,61 @@
+
+/*Quando digitado, o valor recebido pela variável é do tipo string*/
+
+var valor1 = Number(window.prompt("Digite o primeiro valor: ")) 
+var valor2 = Number(window.prompt("Digite o segundo valor: ")) 
+
+/*Com a tag Number, valor string is convertido in Number*/
+
+var soma = valor1 + valor2
+
+/*
+
+Para converte a number in string: 
+
+Variável.toString()
+
+or 
+
+String(variável)
+
+window.alert("Result: " + soma.toString())
+
+*/
+
+window.alert(`A soma entre ${valor1} + ${valor2} é: ` + String(soma))
+
+/*Utilizando crase `, sifrão $ e chaves {}, torna mais fácil com o template string */
+
+-----------------------------------------------------------------------------------------------
+
+
+variável.length = quantidade de caracteres tem na string
+
+
+variável.toUpperCase() = tudo maiusculo
+
+variável.toLowerCase() = tudo minusculo
+
+-----------------------------------------------------------------------------------------------------
+
+Feito no Node JS
+
+
+Para colocar casa decimais:
+
+> n1 = 7770
+7770
+> n1.toFixed(2)
+'7770.00'
+> n1.toFixed(2).replace('.',',')
+'7770,00'
+
+Para colocar o valor de moeda:
+
+> n1.toLocaleString('pt-br', {style: 'currency', currency: 'BRL'})
+'R$ 7.770,00'
+> n1.toLocaleString('pt-br', {style: 'currency', currency: 'USD'})
+'US$ 7.770,00'
+> n1.toLocaleString('pt-br', {style: 'currency', currency: 'EUR'})
+'€ 7.770,00'
+>
