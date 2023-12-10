@@ -1,1 +1,36 @@
 DOM 
+
+Document
+objec
+Model
+
+Ou seja, DOM (Modelo de objetos para documentos) é um conjunto de objetos dentro do navegador que vai dar acesso aos componentes do seu Website.
+
+O DOM está presente quando estou rodando JavaScript dentro do meu navegador.
+
+
+Árvore do DOM:
+
+A Árvore DOM começa pela raiz e se chama 'window'. Então tudo dentro do JavaScript está dentro de um objeto chamado window (Janela)
+
+Dentro do Window:
+
+- Location: diz a localização do site, qual a URL(Uniform Resource Locator = Localizador Uniforme de Recursos).
+
+- Document: Documento atual.
+
+- History: vai aguardando para onde vc veio e para onde vc vai.
+
+
+Dentro de Document: 
+
+- HTML: Parte HTML do meu literalmente.
+
+Dentro de HTML (Pai dos objetos abaixo, ou PARENT):
+
+#Child do HTML
+- Head: Parte de cabeçalho. 
+
+- body: Parte de corpo.
+
+Árvore DOM funciona como uma hierá. 
