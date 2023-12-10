@@ -1,0 +1,91 @@
+Relacionis: 
+
+Maior >
+5 > 2 true
+
+Menor <
+7 < 4 False
+
+Maior ou igual>=
+8 >= 8 True
+
+Menor ou igual<=
+9 <= 7 True
+
+Igual ==
+5 == '5' True
+
+Diferente !=
+4 != 4 False
+
+Identico ===
+5 === '5' false
+
+Desigual restrito
+x !== y 
+
+Lógicos:
+
+Negação (NOT) ! -> true ou false 
+
+! True: se não for verdadeiro é False.
+! False: se não for verdadeiro é True. 
+
+Conjunção (AND) && 
+
+true  && true  -> true
+true  && false -> false
+false && true  -> false
+false && false -> false
+
+Só acontece o TRUE quando todas forem TRUE.
+
+Disjunção (OR) ||
+
+true  || true  -> true
+true  || false -> true
+false || true  -> true
+false || false -> false
+
+Basta um TRUE que o resultado é TRUE.
+
+Ordem do operadores:
+
+a > b && 2 == 0
+
+1) Operadores Aritmeticos 
+() ** / (ordem padrão da matematica)
+
+2) Operadores Relacionais 
+> < >+ (não tem ordem, quem for primeiro vai ser primeiro.)
+
+3) Operadores Lógicos 
+NOT
+&&
+OR
+
+Ordem dos operadores Lógicos:
+
+1) NOT |
+2) AND &&
+3) OR ||
+
+Exemplos: 
+
+idade >= 15 && idade <= 17 // idade entre 15 e 17 ?
+estado == 'RJ' || estado == 'SP' // o estado é RJ ou SP ?
+salário > 1500 && sexo != 'M' // o salário é acimda de 1500 e não é homem
+
+
+Ternário:
+? :
+
+média = 5.5
+
+média >= 7 ? 'APROVADO' : 'REPROVADO'
+
+Resultado: 'REPROVADO'
+
+teste (média >= 7 ) ? true (se for true executa o código daqui) : 
+
+false (se for false, executa o código daqui.)

@@ -3,7 +3,7 @@ Operadores do JavaScrit:
 
 Aritméticos:
 
-+ - * /(Resto da Divisão)  %(Divisão inteira) **(Potenciação)
++ - *  / (Resto da Divisão)  % (Divisão inteira) ** (Potenciação)
 
 --Atribuição:
 
