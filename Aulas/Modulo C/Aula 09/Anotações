@@ -62,12 +62,26 @@ Os elementos podem ser acessados por:
 
 window.document.getElementsByTagName()
 
-- ID
+var nome = window.document.getElementsByTagName('p')[0]
 
+O zero é para selecionar a primeira tag p 
 
-- Nome
+- ID:
+
+getElementByid()
+
+- Nome:
+
+getElementsByName()
+
+*Sempre que Elements for no plural, precisa colocar []
 
 - Classe 
 
+getElementsByClassName()[]
+
 - Seletor
 
+querySelector()
+
+querySelectorAll()

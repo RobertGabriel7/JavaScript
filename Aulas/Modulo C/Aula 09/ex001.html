@@ -10,14 +10,23 @@
             color: white;
             background-color: rgb(119, 176, 255);
         }
+        #p1{
+            color: black;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
     </style>
 </head>
 <body>
-    
+
+<hr>
 <h1>Iniciando estudos com o DOM</h1>
 
 <div>Clique aqui</div>
 
+<p id="p1">Fala pessoal</p>
+
+<div id="msg">Glória a Deus</div>
+<hr>
 <script>
 
 //Mostra algo na tela
@@ -26,6 +35,28 @@ window.document.write('Olá pessoal <br>')
 window.document.write(window.document.charset,'<br>')
 //Para saber a URL
 window.document.write(window.document.url)
+
+var nome = window.document.getElementsByTagName('p')[0]
+
+//o texto que está dentro da variavel
+window.document.write(nome.innerText)
+
+/*
+var ide = window.document.getElementById('msg')
+
+ide.style.backgroundColor = 'white'
+ide.innerText = 'testando..'
+
+*/
+var d = window.document.querySelector('div#msg')
+d.style.backgrond = 'yellow'
+
+
+//Maneira mais facil para mostrar uma variavel dentro da string, mas não pode ser em 'parenteses', somente entre `crazes`
+
+var ja = 'JavaScript'
+window.document.write(`<br> Estou aprendendo ${ja}`)
+document.write(`<br> Quantos caracteres tem a palavra ${ja}: ${ja.length}`)
 
 </script>
 
