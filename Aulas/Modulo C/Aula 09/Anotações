@@ -8,6 +8,7 @@ Ou seja, DOM (Modelo de objetos para documentos) é um conjunto de objetos dentr
 
 O DOM está presente quando estou rodando JavaScript dentro do meu navegador.
 
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
 Árvore do DOM:
 
@@ -33,4 +34,40 @@ Dentro de HTML (Pai dos objetos abaixo, ou PARENT):
 
 - body: Parte de corpo.
 
-Árvore DOM funciona como uma hierá. 
+Dentro de Head:
+
+- meta
+
+-Tittle
+
+Dentro do Body;
+
+-H1
+
+-p
+
+-p (dentro desse paragrafo tem um strong, que é filho)
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+Tudo que foi escrito acima são elementos.
+
+Árvore DOM funciona como uma hierárquica. 
+
+---------------------------------------------------------
+
+Os elementos podem ser acessados por:
+
+- Marca: pode selecionar mais de um objeto
+
+window.document.getElementsByTagName()
+
+- ID
+
+
+- Nome
+
+- Classe 
+
+- Seletor
+
