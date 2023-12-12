@@ -19,7 +19,9 @@
             height: 200px;
             line-height: 200px;
             text-align: center;
+            border-radius: 15px;
         }
+
     </style>
     <title>DOM</title>
 </head>
@@ -30,18 +32,32 @@
 <hr>
 
 
-<!-- Evento DOM é tudo aquilo que pode acontecer com a Div -->>
-<div id="area" onclick="clicar()">
+<!-- Evento DOM é tudo aquilo que pode acontecer com a Div -->
+
+<!--Esses eventos abaixo estão funcionando dentro do HTML-->>
+<div id="area" onclick="clicar()" onmouseenter="entrou()" onmouseout="saiu()">
 Faça algo
 </div>
 
+
+
 <script>
+     var a = window.document.getElementById('area')
 function clicar(){
 
-   var a = window.document.getElementById('area')
-  window.document.alert('Agora foi')
-
+   window.alert('Agora foi')  
 }
+function entrou(){
+a.style.backgroundColor = 'yellow'
+a.style.color = 'green'
+a.innerText = 'Entrou'
+}
+function saiu(){
+a.style.backgroundColor = 'black'
+a.style.color = 'white'
+a.innerText = 'Saiu'
+}
+
 
 </script>
 
