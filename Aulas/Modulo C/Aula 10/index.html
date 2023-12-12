@@ -31,9 +31,19 @@
 
 
 <!-- Evento DOM é tudo aquilo que pode acontecer com a Div -->>
-<div id="area">
+<div id="area" onclick="clicar()">
 Faça algo
 </div>
+
+<script>
+function clicar(){
+
+   var a = window.document.getElementById('area')
+  window.document.alert('Agora foi')
+
+}
+
+</script>
 
 </body>
 </html>
