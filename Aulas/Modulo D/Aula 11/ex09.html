@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>É Brasileiro(a)</title>
+</head>
+<body>
+    
+    
+    <label for="texto">Qual o seu pais:</label>
+    <input type="text" name="texto" id="texto">
+
+    <br>
+    <input type="button" value="Verificar" onclick="Verificar()">
+
+    <h4 id="aga4">...</h4>
+
+    <script>
+     
+        function Verificar(){
+            var pais = window.document.getElementById("texto").value
+            var titulo = window.document.getElementById("aga4")
+            
+            window.alert(pais)
+
+            if( pais != "Brasil"){
+                titulo.innerHTML = "Brasileiro"
+            }else{
+                titulo.innerHTML = "Estrangeiro"
+            }
+        }
+
+    </script>
+</body>
+</html>

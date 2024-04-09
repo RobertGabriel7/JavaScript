@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Condições</title>
+</head>
+<body>
+    <!-- GRAÇAS A DEUS, deu certo! -->
+    <!-- Condições no JavaScript -->
+    <!-- Tag de abertura do JavaScript -->
+    
+    <label for="Velocidade">Velocidade do carro: </label>
+    <input type="number" name="Velocidade" id="Velocidade">
+    <input type="button" value="calcular" onclick="calcular()">
+
+    <h4 id="aga4">teste</h4>
+<script>
+
+    function calcular(){
+
+        var opa = window.document.getElementById("aga4") // Recebendo as informações pelo id
+        var speed = window.document.getElementById("Velocidade") // Recebendo as informações pelo id
+        
+        var speedlimit = 90
+        var speed1 = Number(speed.value) // Number(variavel, o que vc quer da variavel )
+
+        //Verificação da velocidade 
+        if(speed1 > speedlimit){
+
+            opa.innerHTML = `MULTA! <br> Vc estava a ${speed1}km\h, varão velozes e furiosos. ` // innerHTML muda o texto de uma tag atraves do ID
+            window.alert("QUE ISSO VARÃO") // Mostra uma caixa de alerta no site com a mensagem
+
+        }else{
+            opa.innerHTML = `Isso ai varão, dentro do limit`
+            window.alert("OPAAA")
+        }
+        
+     }
+</script>
+</body>
+</html>

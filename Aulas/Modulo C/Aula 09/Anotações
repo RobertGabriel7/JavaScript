@@ -1,7 +1,7 @@
 DOM 
 
 Document
-objec
+object
 Model
 
 Ou seja, DOM (Modelo de objetos para documentos) é um conjunto de objetos dentro do navegador que vai dar acesso aos componentes do seu Website.
@@ -25,7 +25,7 @@ Dentro do Window:
 
 Dentro de Document: 
 
-- HTML: Parte HTML do meu literalmente.
+- HTML: Parte HTML do meu site literalmente.
 
 Dentro de HTML (Pai dos objetos abaixo, ou PARENT):
 

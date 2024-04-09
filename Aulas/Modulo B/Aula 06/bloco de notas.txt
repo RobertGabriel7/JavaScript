@@ -24,7 +24,7 @@ window.alert("Result: " + soma.toString())
 
 window.alert(`A soma entre ${valor1} + ${valor2} é: ` + String(soma))
 
-/*Utilizando crase `, sifrão $ e chaves {}, torna mais fácil com o template string */
+/*Utilizando crase `, cifrão $ e chaves {}, torna mais fácil com o template string */
 
 -----------------------------------------------------------------------------------------------
 

@@ -16,7 +16,7 @@ Esse metodo só funciona se a variavel receber ela mesmo:
 n += 4 (n recebe a variavel n mais 4)
 x -= 1 (x recebe a variavel x menos 1)
 
---Incremneto: 
+--Incremento: 
 Semelhante ao exemplo acima, porém mais facil:
 
 
