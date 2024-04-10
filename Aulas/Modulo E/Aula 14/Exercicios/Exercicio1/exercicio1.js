@@ -14,14 +14,16 @@ function contar(){
         
         window.alert(`incicio ${inicioo}, fim ${fimm} e passo ${passoo}`) 
         
-        var sequencia = " "
+        var sequencia = " " /* Variavel que vai armazenar a contagem */
+        
         for (var comeco = inicioo; comeco <= fimm; comeco += passoo){
 
         informationn1.innerHTML = "Contando:"
+        /* sequencia = sequencia + mensagem */
         sequencia += `&#128073; ${comeco} `
         
         }  
-        
+        /* Aqui a tag com esse id vai receber o valor da variavel sequencia */
          informationn2.innerHTML = sequencia
     }
 }

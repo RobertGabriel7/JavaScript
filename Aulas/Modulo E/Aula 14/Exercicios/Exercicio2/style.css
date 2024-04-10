@@ -12,12 +12,16 @@ header{
     color: black;
     background-color: #edf7f6;
     width: 350px;
-    height: 350px;
+    height: 450px;
     border-radius: 10px;
     border: 2px solid black;
 }
-#information{
+#information1{
+    border: 2px solid black;
     margin-top: 55px;
+    text-align: center;
+}
+#information2{
     text-align: center;
 }
 input{
