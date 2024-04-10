@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 2 de JavaScript</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body id="bcorpo">
+    
+<!-- Cabeçalho -->
+<header>
+    <h3>Verificar idade</h3>
+</header>
+
+<!-- Secao 1 -->
+<section id="secao1">
+
+    <!-- Ano de Nascimento -->
+    <label for="textDoAno">Ano de Nascimento:</label>
+    <input type="text" name="textDoAno" id="textDoAno" >
+    <br>
+
+    <!-- Sexo da pessoa -->
+    <p> Sexo:
+        <!-- Aqui no input radio precisa ter o mesmo nome se não é possivel marcar os dois campos -->
+        <input type="radio" name="sexo1" id="masc">
+        <label for="masc">Masculino</label>
+        <input type="radio" name="sexo1" id="fem">
+        <label for="fem">Feminino</label>
+        
+    </p>
+
+    <!-- Botão de verificar -->
+    <input type="button" value="Verificar" onclick="Verificando()" id="botao">
+
+    <!-- Informações -->
+    <div id="informacoes">
+        
+        <p id="p1">Preencha os dados acima para ver o resultado!</p>
+        <img src="pexels-imgInicial.png" alt="" id="imagem1">
+
+    </div>
+
+</section>
+
+
+<!-- Rodapé -->
+<footer>&copy; Robert_Seven</footer>
+
+<!-- Script em JavaScript -->
+<script src="script2.js"></script>
+</body>
+</html>
