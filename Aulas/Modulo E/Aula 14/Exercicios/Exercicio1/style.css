@@ -1,0 +1,36 @@
+body{
+    background-color: #2660a4;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: white;
+}
+header{
+    text-align: center;
+}
+#secao1{
+    margin: auto;
+    padding: 15px;
+    color: black;
+    background-color: #edf7f6;
+    width: 350px;
+    height: 350px;
+    border-radius: 10px;
+    border: 2px solid black;
+}
+#information{
+    margin-top: 55px;
+    text-align: center;
+}
+input{
+    border-radius: 10px;
+}
+#botao{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    border: none;
+    background-color: black;
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+}
+footer{
+    text-align: center;
+}
