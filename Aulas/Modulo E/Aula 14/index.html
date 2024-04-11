@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio</title>
+    <style>
+        body{
+            background-color: #1e96fc;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            text-align: center;
+            color: white;
+        }
+        input{
+            background-color: rgba(0,0,0,0);
+            border-radius: 7px;
+            border: 2px solid white;
+            color: white;
+            padding: 5px;
+        }
+        #mensagem{
+            height: 150px;
+            width: 250px;
+        }
+        section{
+            margin: auto;
+            padding: 10px;
+            background-color: rgba(0,0,0,0.1);
+            width: 450px;
+            text-align: center;
+            border-radius: 7px;    
+        }
+        footer{
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: right;
+        }
+    </style>
+</head>
+<body>
+
+<header><h3>Formúlario</h3></header>
+
+<section>
+    
+    <form action="#">
+        <!-- Nome -->
+        <label for="nome">Nome:</label>
+        <input type="text" name="nome" id="nome" maxlength="20">
+        <br>
+    
+        <!-- E-mail -->
+        <label for="email">E-mail:</label>
+        <input type="email" name="email" id="email">
+        <br>
+    
+        <!-- Mensagem -->
+        <label for="mensagem">Mensagem:</label>
+        <br>
+        <input type="text" name="mensagem" id="mensagem" >
+        <br>
+    
+        <!-- Botão -->
+        <input type="button" value="Enviar">
+    
+    </form>
+</section>
+
+<footer><p>&copy; Programação Web</p></footer>
+
+</body>
+</html>
