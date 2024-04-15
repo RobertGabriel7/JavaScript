@@ -1,0 +1,60 @@
+body{
+    background-color: #2660a4;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: white;
+}
+header{
+    text-align: center;
+}
+#secao1{
+    margin: auto;
+    padding: 15px;
+    color: black;
+    background-color: #edf7f6;
+    width: 450px;
+    height: 450px;
+    border-radius: 10px;
+    border: 2px solid black;
+}
+#information1{
+    text-align: center;
+ 
+}
+#information2{
+    text-align: center;
+}
+#information3{
+    text-align: center;
+}
+div#para{
+    border: 2px solid black;
+    margin: 15px 0px;
+    height: 350px;
+    border-radius: 10px;
+}
+input{
+    border-radius: 10px;
+}
+input#numero{
+    width: 150px;
+    text-align: center;
+}
+input#finalizar{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: none;
+}
+input#botao:hover{
+    background-color: #2660a4;
+    color: white;
+}
+input#finalizar:hover{
+    background-color: #2660a4;
+    color: white;
+}
+#botao{
+ font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+ background-color: none;
+}
+footer{
+    text-align: center;
+}

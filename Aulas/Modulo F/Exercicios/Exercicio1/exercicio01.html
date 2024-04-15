@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Analise de números</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+        <header><h3>Analisando números</h3></header>
+    
+        <section id="secao1">
+
+        
+              <label for="numero">Números:</label>
+              <input type="number" name="numero" id="numero" max="100" min="0" placeholder="0 até 100">
+        
+             <input type="button" value="Adicionar" onclick="analisar()" id="botao">
+            <div id="para">
+        
+                <p id="information1" >Analisando...</p>
+                <p id="information2" ></p>
+                <p id="information3"></p>
+            </div>
+
+            <input type="button" value="Finalizar" id="finalizar" onclick="finalizar()">
+        </section>
+    
+        <footer><p>&copy; Robert_Seven</p></footer>
+    
+        <script src="exercicio1.js"></script>
+</body>
+</html>

@@ -23,7 +23,10 @@ console.log(num)
 /* Para buscar valores dentro de um array */
 /* Ela vai retornar o indice do valor a ser procurado, caso não tenha o valor, vai retornar -1 */
 /* array.indexOf(valor para ser procurado) */   
-let verificao = num.indexOf(77)
+
+let verificao = num.indexOf(7)
+console.log(verificao)
+/* 
 if(verificao == -1){
     console.log("Valor não encontrado.")
 }else{{
@@ -36,7 +39,7 @@ if(verificao == -1){
 
 
 
-
+ */
 
 console.log("Utilizando a estrutura de repetição WHILE")
 var numeros = 0
