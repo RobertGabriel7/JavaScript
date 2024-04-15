@@ -1,0 +1,35 @@
+Proximos passos para seguir com os estudos em JavaScript:
+
+* functions: 
+estudar mais conceitos de funções. JavaScript funcional.
+
+* Orientação ao Objeto: { 
+Estudar orientação ao objeto com JavaScript, porque a linguagem também é orientada ao objeto.
+
+- Objetos é mais evoluido do que um array, porque no array só posso acessar os elementos com valores numericos, mas no objetos, é possivel acessar os elementos atraves de string e até chamar functions no objeto.
+
+- Objetos são variaveis, a variavel guarda valores, só que alem de guarda valores que são os atributos, os obejtos podem guarda funcionalidade (functions) que é chamado de métodos
+
+No JavaScript o array é um objeto e o objeto é um objeto, porque tem a estrutura da mesma origem.
+
+}
+
+* Modularização: 
+para modularizar o código e deixar o código separado em arquivos separados, reutilizar códigos utilizando o JavaScript.
+
+* RegEx: 
+estudar expressões regulares, o JavaScript tem compatibilidade, e é ótimo para validação de dados.
+
+* JSON:
+ serve para transmitir dados, salvar dados lo calmente.
+
+* AJAX: 
+por exemplo, quando vc está rolando um pagina e as fotos são carregadas automaticamente sem precisar acessar outro pagina, quem faz isso é AJAX (usa o JavaScript).
+
+* Nodejs: 
+estudar Nodejs para conseguir fazer os seus scripts rodarem no servidor, isso dá um potencial muito grande para linguagem, fora os frameworks como jQuery, Vue.js, Angular
+
+
+
+
+Conclui o curso de JavaScript do canal curso em video em 15/04/2024, GRAÇA A DEUS!

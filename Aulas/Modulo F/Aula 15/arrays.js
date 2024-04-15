@@ -64,3 +64,9 @@ for (numeros in num){
     console.log(`Indice do elemento: ${numeros}, e o valor: ${num[numeros]}`)
 }
 
+
+
+
+// 
+
+/* */

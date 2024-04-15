@@ -1,0 +1,24 @@
+`addEventListener` é um método em JavaScript usado para anexar um ouvinte de evento a um elemento HTML. Esse método permite que você especifique uma função que será executada quando um determinado evento ocorrer no elemento alvo.
+
+Por exemplo, ao usar `addEventListener`, você pode definir uma função para ser executada quando o usuário clica em um botão, passa o mouse sobre um elemento, pressiona uma tecla do teclado, entre outros eventos.
+
+A sintaxe básica do `addEventListener` é a seguinte:
+
+```javascript
+elemento.addEventListener(evento, função, useCapture);
+```
+
+- `elemento`: O elemento HTML ao qual você deseja adicionar o ouvinte de evento.
+- `evento`: O nome do evento que você deseja monitorar (por exemplo, 'click', 'mouseover', 'keydown', etc.).
+- `função`: A função a ser executada quando o evento ocorrer.
+- `useCapture` (opcional): Um valor booleano que indica se usar o modo de captura ou não. Geralmente, você pode deixar esse valor como `false` (padrão).
+
+Por exemplo, para adicionar um ouvinte de evento de clique a um botão com o ID "meuBotao" que chama a função `clicar` quando clicado, você pode fazer o seguinte:
+
+```javascript
+var botao = document.getElementById("meuBotao");
+
+botao.addEventListener('click', clicar);
+```
+
+Isso garante que a função `clicar` seja executada sempre que o botão for clicado.

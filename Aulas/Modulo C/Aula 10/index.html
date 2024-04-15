@@ -50,10 +50,17 @@ Faça algo
     
     //Para acessar a Div pelo ID 
     var a = document.getElementById('area')
-    a.addEventListener('click',clicar)
-    a.addEventListener('mouseenter', entrou)
-    a.addEventListener('mouseout', saiu)
-    a.addEventListener('mousemove', mexeu)
+    // Adiciona um event listener para o evento 'click' no elemento 'a', que chama a função 'clicar' quando o evento é acionado.
+    a.addEventListener('click', clicar);
+
+    // Adiciona um event listener para o evento 'mouseenter' (quando o cursor do mouse entra no elemento) no elemento 'a', que chama a função 'entrou'.
+    a.addEventListener('mouseenter', entrou);
+
+    // Adiciona um event listener para o evento 'mouseout' (quando o cursor do mouse deixa o elemento) no elemento 'a', que chama a função 'saiu'.
+    a.addEventListener('mouseout', saiu);
+
+    // Adiciona um event listener para o evento 'mousemove' (quando o cursor do mouse é movido dentro do elemento) no elemento 'a', que chama a função 'mexeu'.
+    a.addEventListener('mousemove', mexeu);
 
      function clicar(){
 
@@ -80,3 +87,34 @@ function mexeu(){
 
 </body>
 </html>
+
+<!-- Sobre addEventListener -->
+<!-- 
+
+`addEventListener` é um método em JavaScript usado para anexar um ouvinte de evento a um elemento HTML. Esse método permite que você especifique uma função que será executada quando um determinado evento ocorrer no elemento alvo.
+
+Por exemplo, ao usar `addEventListener`, você pode definir uma função para ser executada quando o usuário clica em um botão, passa o mouse sobre um elemento, pressiona uma tecla do teclado, entre outros eventos.
+
+A sintaxe básica do `addEventListener` é a seguinte:
+
+```javascript
+elemento.addEventListener(evento, função, useCapture);
+```
+
+- `elemento`: O elemento HTML ao qual você deseja adicionar o ouvinte de evento.
+- `evento`: O nome do evento que você deseja monitorar (por exemplo, 'click', 'mouseover', 'keydown', etc.).
+- `função`: A função a ser executada quando o evento ocorrer.
+- `useCapture` (opcional): Um valor booleano que indica se usar o modo de captura ou não. Geralmente, você pode deixar esse valor como `false` (padrão).
+
+Por exemplo, para adicionar um ouvinte de evento de clique a um botão com o ID "meuBotao" que chama a função `clicar` quando clicado, você pode fazer o seguinte:
+
+```javascript
+var botao = document.getElementById("meuBotao");
+
+botao.addEventListener('click', clicar);
+```
+
+Isso garante que a função `clicar` seja executada sempre que o botão for clicado.
+
+
+ -->
