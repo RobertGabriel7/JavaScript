@@ -3,12 +3,18 @@ body{
     background-color: #313b72; 
     background-size: cover;
     color: white;
+    background-repeat: no-repeat;
+    text-align: center;
     /* 
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center; */
     
+}
+header{
+    margin: auto;
+    width: 500px;
 }
 h3{
     text-align: center;
@@ -35,4 +41,5 @@ footer{
     text-align: center;
     font-style: italic;
     text-shadow: 4px 4px 2px black;   
+    width: 500px;
 }

@@ -22,9 +22,10 @@ body {
 .container {
   max-width: 640px;
   margin: 50px auto;
-  background: #fff;
+  background: #ffffff;
   padding: 20px;
   border-radius: 10px;
+  
 }
 
 form input,
@@ -80,4 +81,7 @@ p.p25 {
 
 h5.haga5 {
   margin-bottom: 5px;
+}
+a#botao > img{
+    width: 50px;
 }
