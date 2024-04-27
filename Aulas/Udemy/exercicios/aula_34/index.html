@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio da aula 34</title>
+    <style>
+        label, input{
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+    <form>
+
+        <label for="nome">Nome:</label>
+        <input type="text" name="nome" id="nome">
+        <br>
+
+        <label for="idade">Idade:</label>
+        <input type="text" name="idade" id="idade">
+        <br>
+
+        <label for="hobby">Hobby</label>
+        <input type="text" name="hobby" id="hobby">
+        <br>
+        
+        <input type="submit" value="Enviar" id="envio" onsubmit="recebendoDados(event)">
+
+    </form>
+        <p id="information1"></p>
+
+<script src="script.js"></script>
+</body>
+</html>
