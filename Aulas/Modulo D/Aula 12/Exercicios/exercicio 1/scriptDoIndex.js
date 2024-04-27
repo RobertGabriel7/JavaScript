@@ -40,6 +40,7 @@ if (hora < 12){ //Horario da manhã
     secao.style.backgroundColor = "rgba(0,0,0,0.1)"
     secao.style.color = "white"
 
+
 } else{ //Horario de noite
 
     //Mensagem

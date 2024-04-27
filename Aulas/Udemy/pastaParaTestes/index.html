@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste</title>
+    <style>
+        #diveCor{
+            margin-top: 25px;
+            background-color: aqua;
+            width: 150px;
+            height: 150px;
+            border-radius: 20px;
+            border: 1px solid black;
+        }
+    </style>
+</head>
+
+<body>
+    <label for="red">RED:</label>
+    <input type="range" name="red" id="red" class="cores" value="255" min="0" max="255" oninput="teste()">
+    <span id="infored"></span>
+    <br>
+    <label for="green">GREEN:</label>
+    <input type="range" name="green" id="green" class="cores" value="255" min="0" max="255" oninput="teste()">
+    <span id="infogreen"></span>
+    <br> 
+    <label for="blue">BLUE:</label>
+    <input type="range" name="blue" id="blue" class="cores" value="255" min="0" max="255" oninput="teste()">
+    <span id="infoblue"></span>
+
+     <div id="diveCor"></div>
+    <script src="script.js"></script>
+</body>
+
+</html>
