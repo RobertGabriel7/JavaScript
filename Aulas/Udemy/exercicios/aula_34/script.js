@@ -19,21 +19,23 @@ function meuEscopo() {
         let hobby = window.document.querySelector('input#hobby').value
         let information1 = window.document.querySelector('#information1')
         /* Vai colocar um ouvinte de ação para o form */
-        
-        
-
+    
+        /* Objeto para armazenar os dados que foram enviados para os inputs */
         const objetoPessoas = {
             nome: nome,
             idade: idade,
             hobby: hobby
         }
+
         pessoas[indice] = objetoPessoas
         information1.innerHTML += `O seu nome é ${objetoPessoas.nome}, você tem ${objetoPessoas.idade} e o seu hobby é: ${objetoPessoas.hobby}.<br>`
         
         console.log(pessoas)
         indice++
-    };
 
+
+    };
+    /* Exercio concluido graças a Deus! */
 }
 meuEscopo();
 
@@ -49,4 +51,17 @@ Por exemplo:
 
 window.alert(nome, idade, hobby)
 
+*/
+
+/* Alternativa
+
+    Ao inves de eu usar uma variavel que vai recebendo valor a cada submit e utiliza´la como indice, eu posso fazer isso (o mais indicado):
+
+          pessoas.push({
+            nome: nome,
+            idade: idade,
+            hobby: hobby
+        })  
+
+        Dessa maneira, os valores são adicionados no ultimo indice do array pessoas, sendo assim, uma melhor maneira para adicionar um valor ao ultimo indice.
 */
