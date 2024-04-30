@@ -10,3 +10,6 @@ let segundo = agora.getSeconds(); // Retorna os segundos (0-59)
 let milissegundo = agora.getMilliseconds(); // Retorna os milissegundos (0-999)
 
 console.log(`${hora}:${minuto}:${segundo}`)
+
+let teste = agora.getUTCDay()
+console.log(teste)
