@@ -1,3 +1,8 @@
+// Array dentro de outro array
+//                                   0            1           2
+//                               0  1  3    0  1  2   0  1  2
+const numberss = [ [1, 2, 3], [4, 5, 6], [7, 8, 9] ];
+
 let aurei = ['Lucas', 'Julia', 'Joao', 'Maria']
 
 /* Para adicionar valores no ultimo indice */
