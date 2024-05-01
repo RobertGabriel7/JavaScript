@@ -1,0 +1,158 @@
+<!-- Meu desenvolvimento para entender mais sobre box model e criação de sites semânticos. -->
+
+<!doctype html>
+<html lang="pt-br">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+<title>Box Model</title>
+<link rel="shortcut icon" href="./img/Box_Model_01.ico" type="image/x-icon">
+<link rel="stylesheet" href="css/style.css">
+
+<body>
+    <!-- Cabeçalho -->
+    <header>
+        <h2>Box Model ou Modelo de Caixa</h2>
+        <p><em>Aprendendo a utilizar Box Model.</em></p>
+    </header>
+
+    <!-- Main -->
+    <main>
+        <!-- Seção -->
+        <section>
+
+            <p>Em uma página WEB, cada elemento é representado como uma box (caixa) retangular. Determinar o tamanho,
+                propriedades - como sua cor, fundo, estilo das bordas - e a posição desses boxes é o objetivo do
+                mecanismo de renderização.</p>
+            <p>No CSS, cada um desses boxes retangulares é descrita usando o box model padrão. Este modelo descreve o
+                conteúdo do espaço ocupado por um elemento. Cada box possui 4 edges: </p>
+            <em>
+                <dl> <!-- Discrição da lista ou lista de discrição -->
+                    <ol reversed> <!-- Lista ordenada com a numeração em oredem decrescente -->
+
+                        <dt> <!-- Termo de definição  -->
+                            <li>Margin.</li>
+                        <dd>É a distancia da borda até o próximo conteúdo ou outra tag.</dd>
+                        <!-- Discrição da definição. -->
+                        </dt>
+
+                        <dt>
+                            <li>Border.</li>
+                        <dd>Border é a borda do content.</dd>
+                        </dt>
+
+                        <dt>
+                            <li>Padding.</li>
+                        <dd>Padding é o espaço entre o conteúdo e a borda.</dd>
+                        </dt>
+
+                        <dt>
+                            <li>Content (Conteúdo).
+                        <dd>Content é o conteúdo da página qualquer outra coisa...</dd>
+                        </li>
+                        </dt>
+
+                    </ol>
+            </em>
+            <!-- Imagens sobre box model -->
+            <figure>
+                <img src="img/Box_Model_01.jpg">
+                <img src="img/Box_Model_02.png" alt="Exemplo de Box Model">
+            </figure>
+
+            <h3><em>Sobre Content</em></h3>
+            <p>Quando mudamos os valores de height(altura) e width(largura), essa alteração reflete apenas no conteúdo,
+                e não na margin, border ou no padding.</p>
+
+            <h3><em>Sobre Padding</em></h3>
+            <p>O background-color, preenche apenas conteúdo e padding. Então não adianta aumentar a margin ou border
+                para o background expandir, mas é atraves do padding que torna maior o background. No Caso de um botão,
+                precisa mexer no padding para mudar o tamanho e o padding tambem é clicavel, por isso não pode mudar com
+                a margin</p>
+            <h3><em>Sobre a Border</em></h3>
+            <p>A borda vai no seu lugar mesmo e ela pode ser estilizada da forma que quiser.</p>
+            <h3><em>Sobre Margin</em></h3>
+            <p>A margin vai ser completamente transparente e vai ser apenas para distanciar os elementos ao lado dela.
+            </p>
+
+            <h2>Propriedades</h2>
+            <p><em><strong>Box-sizing:</strong></em> Por padrão o box-size é box-sizing: content-box, ou, o width e
+                height vai ser aplicado somente no content. E para definir a altura total do elemento com height,
+                precisa colocar box-sizing: border-box e assim vai controlar como o tamanho do elemento vai ser
+                calculado.</p>
+            <dl>
+                <dt>Dicas sobre CSS</dt>
+                <dd>Criar um arquivo chamado de "reset.css" para tirar por padrão a estilização que tem no site e para
+                    afinalidade de zerar a margin, padding e utilizar box-sizing: border-box</dd>
+            </dl>
+
+            <p><em><strong>Outline, outline-width:</strong></em> É um desenho por fora da bordar que não ocupa espaço e
+                tecnimente não faz parte do box-model, mas aparece.</p>
+            <p><em><strong>Overflow, overflow: visible:</strong></em> Overflow vai definir como o conteúdo que eceder a
+                area do box-sizing vai se comportar (por padrão é visible). Ou seja, como será tratado o conteúdo
+                estiver fora da div.
+                <br>Valores do overflow: hidden: vai esconder o conteúdo que sobra (vai cortar).<br>
+                Auto: aparece a barra de rolagem.
+                Scroll: aparece a barra de rolagem independemente se o conteúdo passou ou não da div.
+            </p>
+
+            <!-- Tipos de caixas no HTML -->
+            <h3>Existem 2 tipos de caixas: block e inline</h3>
+            <section id="tags">
+
+                <div id="lista1">
+                    <h4 class="tags">Tags em Block(bloco):</h4>
+                    <ul class="tagslistas">
+                        <li>&lt;div&gt;</li>
+                        <li>&lt;p&gt;</li>
+                        <li>&lt;h1&gt; até &lt;h6&gt;</li>
+                        <li>&lt;ul&gt;</li>
+                        <li>&lt;ol&gt;</li>
+                        <li>&lt;li&gt;</li>
+                        <li>&lt;table&gt;</li>
+                        <li>&lt;blockquote&gt;</li>
+                        <li>&lt;form&gt;</li>
+                        <li>&lt;header&gt;</li>
+                        <li>&lt;footer&gt;</li>
+                        <li>&lt;section&gt;</li>
+                    </ul>
+
+                    <p>Eles começam em uma nova linha e ocupam todo o espaço horizontal disponível até o final da linha.
+                        Eles podem ter largura e altura definidas.
+                        Eles podem conter outros elementos (tanto elementos block quanto inline) dentro deles.
+                    </p>
+                </div>
+
+                <div id="lista2">
+                    <h4 class="tags">Tags em Inline(em linha):</h4>
+                    <ul class="tagslistas">
+                        <li>&lt;span&gt;</li>
+                        <li>&lt;a&gt;</li>
+                        <li>&lt;strong&gt;</li>
+                        <li>&lt;em&gt;</li>
+                        <li>&lt;img&gt;</li>
+                        <li>&lt;br&gt;</li>
+                        <li>&lt;input&gt;</li>
+                        <li>&lt;button&gt;</li>
+                        <li>&lt;label&gt;</li>
+                        <li>&lt;select&gt;</li>
+                        <li>&lt;textarea&gt;</li>
+                        <li>&lt;abbr&gt;</li>
+                    </ul>
+                    <p>Eles não iniciam em uma nova linha e ocupam apenas o espaço necessário para exibir seu conteúdo.
+                        Eles não podem ter largura e altura definidas.
+                        Eles não podem conter elementos block, mas podem conter outros elementos inline.</p>
+                </div>
+
+            </section>
+
+        </section>
+    </main>
+    <!-- Rodapé -->
+    <footer>
+        <p><em>Site semântico, todos os direitos reservados, 2024.</em></p>
+    </footer>
+
+
+</body>
+
+</html>

@@ -1,0 +1,13 @@
+/* O que é CSS ? 
+
+    CSS = Cascding Style Sheets (Folha de Estilo em Cascata) serve para estilizar todo o conteúdo do HTM, e pelo fato de ser em cascata, só considera a ultima alteração de algum elemento. 
+
+    CSS é composto por declaration (declarações), utilizando o nome da tag e chaves
+
+    Por exemplo:
+
+    body{
+        background-color: blue ;
+    }
+
+*/
