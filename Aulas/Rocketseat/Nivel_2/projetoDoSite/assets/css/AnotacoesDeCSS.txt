@@ -1,0 +1,34 @@
+   background-repeat: no-repeat; 
+   Sever para a imagem não repetir ela mesma.
+
+   Então tem o eixo x que é horizontal e o eixo y que é vertical
+   Acontece que ao usar essa tag, a imagem fica no center, mas no eixo y, então ela fica no topo do site 
+   Nesse caso o background-position: trabalha com o eixo x e o eixo y; 
+   background-position: eixo Y e eixo X ; 
+   background-position: top center; 
+
+   background-size: serve para especificar o tamanho da imagem do fundo.. 
+    
+    auto: Valor padrão. A imagem de fundo é exibida em seu tamanho original.	
+    
+    length:	Define a largura e altura da imagem de fundo. O primeiro valor define a largura, o segundo valor define a altura. Se apenas um valor for dado, o segundo é definido como "auto".	
+    
+    percentage: Define a largura e altura da imagem de fundo em porcentagem do elemento pai. O primeiro valor define a largura, o segundo valor define a altura. Se apenas um valor for dado, o segundo é definido como "auto".	
+    
+    cover: Redimensiona a imagem de fundo para cobrir todo o contêiner, mesmo que seja necessário esticar a imagem ou cortar um pouco de uma das bordas.	
+    
+    contain: Redimensiona a imagem de fundo para garantir que a imagem seja totalmente visível.	
+    
+    initial: Define esta propriedade para o seu valor padrão.	N/A
+    
+    inherit: Herda esta propriedade do elemento pai.
+  
+    background-size: cover; */ /* O atributo cover faz com que a imagem cobre totalmente o container (bloco) mesmo que seja necessario cortar a imagem ou as bordas. 
+     
+    Ao inves de escrever tudo isso que está acima, é possivel fazer dessa maneira 
+    
+    Aqui no CSS a altura precisa ser fluida e por isso nem sempre é definida
+  
+    O display Block, por padão, utiliza a largura total disponivel do tela.
+
+    O display inline fica na mesma linha.

@@ -1,0 +1,25 @@
+body {
+  /* 
+    background-image:url(../img/bg-mobile.jpg);
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cever;
+    */
+  /* Precisa colocar uma / depois do background-position para colocar o cover */
+  background: url(../img/bg-mobile.jpg) no-repeat top center/cover;
+  color: white;
+  font-family: "Inter Tight";
+}
+#container {
+  /* margin: auto só funciona com elementos em block */
+  margin: auto; /* o container fica no meio porque é um block (por padrão), se fosse inline não daria o mesmo resultado */
+  width: 360px;
+  height: 712px;
+  border: 2px solid white;
+}
+#profile {
+  text-align: center; /* Modifica todos os elementos em inline */
+}
+#profile img {
+  width: 112px;
+}
