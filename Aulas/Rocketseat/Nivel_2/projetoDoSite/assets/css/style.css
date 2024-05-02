@@ -1,3 +1,13 @@
+/* No CSS o jeito certo é o jeito que resolveu o problema */
+/* Reset universal */
+*{
+  margin: 0px;
+  padding: 0px;
+  transition: all 0.5s;
+
+  /* box-sizing: é a medida do tamanho da caixa; */
+  box-sizing: border-box; /* O border-box serve basicamente para que o conteúdo (padding) e a borda (border) não passem do widht e height estabelecidos. Com isso o conteúdo não passa da medida estabelecida. */
+}
 body {
   /* 
     background-image:url(../img/bg-mobile.jpg);
@@ -10,16 +20,97 @@ body {
   color: white;
   font-family: "Inter Tight";
 }
-#container {
+
+div#container {
   /* margin: auto só funciona com elementos em block */
-  margin: auto; /* o container fica no meio porque é um block (por padrão), se fosse inline não daria o mesmo resultado */
+  margin: 20px auto 0px; /* o container fica no meio porque é um block (por padrão), se fosse inline não daria o mesmo resultado */
   width: 360px;
-  height: 712px;
-  border: 2px solid white;
+  padding: 0px 24px;
+  
 }
-#profile {
-  text-align: center; /* Modifica todos os elementos em inline */
+
+/* header */
+header#profile {
+  margin-top: 56px;
+  padding: 25px;
+  text-align: center; /* Modifica todos os elementos com display em inline */
+  /* border: 2px solid aqua; */
+
 }
+
 #profile img {
-  width: 112px;
+  border-radius: 50%;
+  height: 125px;
+  width: 125px;
+}
+#profile p {
+  margin-top: 8px;
+  /* Largura/espessura do texto */
+  font-weight: 500;
+
+  /* Tamanho da fonte */
+  font-size: 16px; /* Por padrão é 16px */
+
+  /* é usada para definir a altura da linha de texto */
+  line-height: 24px;
+}
+/* Links */
+#section  a{
+  text-align: center;
+  padding: 18px 24px;
+  margin: 16px 0px;
+  display: block;
+  text-decoration: none;
+  color: white;
+  border: 2px solid rgba(255, 255, 255, 0.5);
+  border-radius: 10px;
+  background-color: rgba(128, 128, 128, 0.1);
+  /* A propriedade backdrop-filter no CSS é usada para aplicar efeitos gráficos, como desfoque ou mudança de cores */
+  /* blur cria um desfoco */
+  backdrop-filter: blur(4px);
+  font-weight: 500;
+  /* transition: cria uma transição em algum elemento quando a pagina é acessada ou recarreagda; */
+  /* transition: o elemento e o tempo da transição; */
+  transition: all 0.2s;
+}
+/* pseudo-selector */
+/* :hover modifica algo quando eu passo o mouse em cima de algum elemento */
+#section a:hover{
+  background-color: rgba(128, 128, 128, 0.05);
+  border: 1.5px solid white;
+}
+
+/* Input:botton  */
+#tema{
+  margin: auto;
+  display: block;
+  padding: 5px;
+  border: none;
+  border-radius: 7px;
+  background-color: rgba(255, 255, 255, 0.5);
+
+}
+#midiaSocial{
+  margin: 25px 0px;
+  /* background-color: white; */
+  text-align: center;
+}
+#midiaSocial ion-icon{
+  font-size: 20px;
+  color: white;
+  /* border: 5px solid yellow; */
+  margin: 0px 10px;
+  padding: 10px;
+}
+#midiaSocial ion-icon:hover{
+  background-color: rgba(128, 128, 128, 0.7);
+  border-radius: 50px;
+}
+#rodape{
+  margin: 30px 0px;
+  text-align: center;
+}
+#rodape a{
+  text-decoration: underline;
+  color: white;
 }
