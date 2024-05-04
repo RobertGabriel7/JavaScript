@@ -1,6 +1,5 @@
-var carregado = document.querySelector("#bcorpo")
 
-function animation(){
-    
+function teste(){
+    alert("clicou")
 }
 
