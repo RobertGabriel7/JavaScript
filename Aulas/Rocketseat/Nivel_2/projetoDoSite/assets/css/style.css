@@ -1,13 +1,54 @@
 /* No CSS o jeito certo é o jeito que resolveu o problema */
+
+/* root é o pseudo-classe que representa o elemento raiz de uma documento HTML. Com root, é possivel usar variavel, por exemplo
+
+:root {
+  --cor-principal: #ff4500;
+}
+
+elemento {
+  color: var(--cor-principal);;
+}
+
+
+*/
+:root {
+  --text-color: white;
+  --bg-url: url(../img/bg-mobile.jpg);
+  --stroke-color: rgba(255, 255, 255, 0.5);
+  /* --surface-color: rgba(128, 128, 128, 0.1); */
+  --surface-color: rgba(255, 255, 255, 0.05);
+  --surface-color-hover: rgba(0, 0, 0, 0.02);
+  --highlight-color: rgba(255, 255, 255, 0.1);
+  --tema-bg: url(../img/moon-starts.svg);
+}
+
+.light {
+  --text-color: black;
+  /* background-color: ; */
+  --bg-url: url(../img/bg-mobile-light.jpg);
+  /* cor da borda */
+  --stroke-color: rgba(0, 0, 0, 0.5);
+  /* background-color:  do link; */
+  --surface-color: rgba(0, 0, 0, 0.05);
+  /* background-color: do link com hover; */
+  --surface-color-hover: rgba(0, 0, 0, 0.02);
+  /* Cor dos icones */
+  --highlight-color: rgba(0, 0, 0, 0.1);
+  --tema-bg: url(../img/sun.svg);
+}
+
 /* Reset universal */
-*{
+* {
   margin: 0px;
   padding: 0px;
   transition: all 0.5s;
 
   /* box-sizing: é a medida do tamanho da caixa; */
-  box-sizing: border-box; /* O border-box serve basicamente para que o conteúdo (padding) e a borda (border) não passem do widht e height estabelecidos. Com isso o conteúdo não passa da medida estabelecida. */
+  box-sizing: border-box;
+  /* O border-box serve basicamente para que o conteúdo (padding) e a borda (border) não passem do widht e height estabelecidos. Com isso o conteúdo não passa da medida estabelecida. */
 }
+
 body {
   /* 
     background-image:url(../img/bg-mobile.jpg);
@@ -16,25 +57,28 @@ body {
     background-size: cever;
     */
   /* Precisa colocar uma / depois do background-position para colocar o cover */
-  background: url(../img/bg-mobile.jpg) no-repeat top center/cover;
-  color: white;
+
+  background: var(--bg-url) no-repeat top center/cover;
   font-family: "Inter Tight";
+
 }
 
 div#container {
   /* margin: auto só funciona com elementos em block */
-  margin: 20px auto 0px; /* o container fica no meio porque é um block (por padrão), se fosse inline não daria o mesmo resultado */
+  margin: 20px auto 0px;
+  /* o container fica no meio porque é um block (por padrão), se fosse inline não daria o mesmo resultado */
   width: 360px;
   padding: 0px 24px;
-  
+
 }
 
 /* header */
 header#profile {
   margin-top: 56px;
   padding: 25px;
-  text-align: center; /* Modifica todos os elementos com display em inline */
-  /* border: 2px solid aqua; */
+  text-align: center;
+  /* Modifica todos os elementos com display em inline */
+  color: var(--text-color);
 
 }
 
@@ -43,28 +87,79 @@ header#profile {
   height: 125px;
   width: 125px;
 }
+
 #profile p {
   margin-top: 8px;
   /* Largura/espessura do texto */
   font-weight: 500;
 
   /* Tamanho da fonte */
-  font-size: 16px; /* Por padrão é 16px */
+  font-size: 16px;
+  /* Por padrão é 16px */
 
   /* é usada para definir a altura da linha de texto */
   line-height: 24px;
 }
+
+/* Botão para mudar a con do tema  */
+#divDoBotao {
+
+  margin: 4px auto;
+  color: var(--text-color);
+  width: 64px;
+
+  /* o position absoluto está relativo ao position: relative; Então o container absolute vai estar dentro do containar relative */
+  position: relative;
+}
+
+#botao {
+  width: 32px;
+  height: 32px;
+  background-color: white;
+  /* A maneira correta de configurar uma imagem para o background-image: ; */
+  background-image: var(--tema-bg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  border: none;
+  border-radius: 50%;
+  color: var(--text-color);
+
+  /* A maneira correta de possionar os elementos  */
+  position: absolute;
+  z-index: 1;
+  top: 50%;
+  
+  /* Move o elemento no eixo Y */
+  transform: translateY(-50%);
+}
+
+.light #botao {
+  right: 0;
+  left: initial;
+}
+
+span#tracker {
+  display: block;
+  width: 64px;
+  height: 24px;
+  background: var(--surface-color);
+  border: 1px solid var(--stroke-color);
+  -webkit-backdrop-filter: blur(4px);
+  border-radius: 999px;
+
+}
+
 /* Links */
-#section  a{
+#section a {
   text-align: center;
   padding: 18px 24px;
   margin: 16px 0px;
   display: block;
   text-decoration: none;
-  color: white;
-  border: 2px solid rgba(255, 255, 255, 0.5);
+  color: var(--text-color);
+  border: 2px solid var(--stroke-color);
   border-radius: 10px;
-  background-color: rgba(128, 128, 128, 0.1);
+  background-color: var(--surface-color);
   /* A propriedade backdrop-filter no CSS é usada para aplicar efeitos gráficos, como desfoque ou mudança de cores */
   /* blur cria um desfoco */
   backdrop-filter: blur(4px);
@@ -73,15 +168,16 @@ header#profile {
   /* transition: o elemento e o tempo da transição; */
   transition: all 0.2s;
 }
+
 /* pseudo-selector */
 /* :hover modifica algo quando eu passo o mouse em cima de algum elemento */
-#section a:hover{
-  background-color: rgba(128, 128, 128, 0.05);
-  border: 1.5px solid white;
+#section a:hover {
+  background: var(--surface-color-hover);
+  border: 1.5px solid var(--stroke-color);
 }
 
 /* Input:botton  */
-#tema{
+#tema {
   margin: auto;
   display: block;
   padding: 5px;
@@ -90,27 +186,35 @@ header#profile {
   background-color: rgba(255, 255, 255, 0.5);
 
 }
-#midiaSocial{
+
+#midiaSocial {
   margin: 25px 0px;
   /* background-color: white; */
   text-align: center;
 }
-#midiaSocial ion-icon{
+
+#midiaSocial ion-icon {
   font-size: 20px;
-  color: white;
+  color: var(--text-color);
   /* border: 5px solid yellow; */
   margin: 0px 10px;
   padding: 10px;
 }
-#midiaSocial ion-icon:hover{
-  background-color: rgba(128, 128, 128, 0.7);
+
+#midiaSocial ion-icon:hover {
+  background-color: var(--highlight-color);
   border-radius: 50px;
+  transition: none;
 }
-#rodape{
+
+#rodape {
   margin: 30px 0px;
   text-align: center;
+  color: var(--text-color);
 }
-#rodape a{
+
+#rodape a {
   text-decoration: underline;
-  color: white;
+  color: var(--text-color);
+
 }
