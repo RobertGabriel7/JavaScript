@@ -22,6 +22,7 @@ elemento {
   --highlight-color: rgba(255, 255, 255, 0.1);
   --tema-bg: url(../img/moon-starts.svg);
   --foto-de-perfil: url(../img/carinha_do_ti.jpg);
+
 }
 
 .light {
@@ -62,6 +63,8 @@ body {
 
   background: var(--bg-url) no-repeat top center/cover;
   font-family: "Inter Tight";
+  /* Vai utilizar a altura total disponibilizada pelo dispositivo  */
+  height: 100vh;
 
 }
 
@@ -69,7 +72,7 @@ div#container {
   /* margin: auto só funciona com elementos em block */
   margin: 20px auto 0px;
   /* o container fica no meio porque é um block (por padrão), se fosse inline não daria o mesmo resultado */
-  
+
   /* O mais importante para manter a responsividade do site */
   width: 100%;
   max-width: 588px;
@@ -92,6 +95,12 @@ header#profile {
   border-radius: 50%;
   height: 125px;
   width: 125px;
+}
+#profile img:hover{
+  outline: 20px solid var(--highlight-color);
+  outline-style: dotted;
+  outline-color: yellow;
+  transition: all 0.5s;
 }
 
 #profile p {
@@ -129,19 +138,27 @@ header#profile {
   border: none;
   border-radius: 50%;
   color: var(--text-color);
-  
-  /* A maneira correta de possionar os elementos  */
+
+  /* A maneira correta de posicionar os elementos  */
   position: absolute;
   z-index: 1;
   top: 50%;
-  
+
   /* Move o elemento no eixo Y */
   transform: translateY(-50%);
+
+  /* Animation para o botao */
+  animation: efeitoDeVoltar 0.3s;
+}
+#botao:hover{
+  outline: 8px solid var(--highlight-color);
+  
 }
 
 .light #botao {
   right: 0;
   left: initial;
+  animation: efeitoDeIr 0.3s;
 }
 
 span#tracker {
@@ -152,14 +169,14 @@ span#tracker {
   border: 1px solid var(--stroke-color);
   -webkit-backdrop-filter: blur(4px);
   border-radius: 999px;
-  
+
 }
 
 /* Links */
-#section a {    
+#section a {
   text-align: center;
   padding: 18px 24px;
-  margin:  16px 0px; 
+  margin: 16px 0px;
   display: block;
   text-decoration: none;
   color: var(--text-color);
@@ -173,7 +190,7 @@ span#tracker {
   /* transition: cria uma transição em algum elemento quando a pagina é acessada ou recarreagda; */
   /* transition: o elemento e o tempo da transição; */
   transition: all 0.2s;
-  
+
 }
 
 /* pseudo-selector */
@@ -181,8 +198,9 @@ span#tracker {
 #section a:hover {
   background: var(--surface-color-hover);
   border: 2px solid var(--stroke-color);
-  
-  
+  /* outline é um contorno visual de um elemento HTML que não afeta o layout. */
+  outline: 5px solid var(--highlight-color);
+
 }
 
 /* Input:botton  */
@@ -226,4 +244,47 @@ span#tracker {
   text-decoration: underline;
   color: var(--text-color);
 
+}
+
+/* Media queries (consulta de midias) permite ajustar a aprentação do conteudo com base em caracteristicas especificas, ou seja, ele faz uma veriifcação no conteudo e com base em uma caracteristica configurada, o media queries executa o seu código */
+
+/* chamo o media querires com: @media (condição) { coódigo para ser rodado } */
+/* Quando a largura minina for de 700px, o media queries vai rodar o código.  */
+@media (min-width: 700px) {
+
+  /* selecionado o :root para mudificar os seus elementos */
+  :root {
+    --bg-url: url(../img/bg-desktop.jpg);
+  }
+
+  /* selecionado a clss .light para mudificar os seus elementos */
+  .light {
+    --bg-url: url(../img/bg-desktop-light.jpg);
+  }
+}
+
+/* Animations no css */
+/* @Keyframes (ponto de referencias) é utilizado para colocar animações no css */
+/* @keyframes efeito(é nome que eu escolhi para o efeito)  */
+@keyframes efeitoDeIr {
+
+  /* Onde a animation vai começar */
+  from {
+    left: 0;
+  }
+
+  /* Onde a animation vai terminar */
+  to {
+    left: 50%;
+  }
+}
+
+@keyframes efeitoDeVoltar {
+  from {
+    right: 0;
+  }
+
+  to {
+    right: 50%;
+  }
 }
