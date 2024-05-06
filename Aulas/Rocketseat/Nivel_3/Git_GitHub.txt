@@ -1,0 +1,31 @@
+Git - Controle de Versão
+
+Repository:
+
+Local onde ficará o histórico do seu projeto.
+
+Branch(ramo): 
+
+Linha do tempo.
+
+Commit:
+
+Pontos na histórico.
+
+Stage:
+
+Preparação do que será enviado para o ponto na história.
+
+--------------------------------------------------------------------
+
+// Inicia o git (Repository) no seu projeto.
+git init
+
+// Adiciona todos os arquivos modificados para fazer o Commit.
+git add .
+
+// Cria e descreve um ponto na história (Commit).
+git commit -m "message here"
+
+// Envia as alterações para o Repository remoto (na nuvem).
+git push 

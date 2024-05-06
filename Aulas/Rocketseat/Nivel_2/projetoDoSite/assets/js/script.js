@@ -17,8 +17,8 @@ function teste(){
         img.setAttribute('src', '../img/carinha_do_ti-noite.jpg');
     }else{
         html.classList.add("light");
-    
         img.setAttribute('src', '../img/carinha_do_ti.jpg');
+        img.setAttribute('alt', 'Foto pessoal para o tema claro do site')
     }
     
     /* 
