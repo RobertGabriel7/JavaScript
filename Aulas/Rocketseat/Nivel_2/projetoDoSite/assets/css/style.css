@@ -69,7 +69,11 @@ div#container {
   /* margin: auto só funciona com elementos em block */
   margin: 20px auto 0px;
   /* o container fica no meio porque é um block (por padrão), se fosse inline não daria o mesmo resultado */
-  width: 360px;
+  
+  /* O mais importante para manter a responsividade do site */
+  width: 100%;
+  max-width: 588px;
+  /* width: e max-width */
   padding: 0px 24px;
 
 }

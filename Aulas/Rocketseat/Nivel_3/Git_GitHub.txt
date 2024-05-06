@@ -29,3 +29,13 @@ git commit -m "message here"
 
 // Envia as alterações para o Repository remoto (na nuvem).
 git push 
+
+/*---------------------------------------------------------------------*/
+
+Github - Plataforma online para colocar os seus códigos (através do Git).
+
+Trabalhar em diversos projetos 
+
+Perfil para mostrar o seu trabalho e o seu desenvolvimento (Portfólio).
+
+
