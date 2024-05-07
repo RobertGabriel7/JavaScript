@@ -57,6 +57,8 @@ for (let frut of frutas){
     console.log(frut);
 }
 
+/* for of só funciona com array e string */
+
 console.log("------------- forEach -----------------");
 /* forEach */
 
@@ -69,3 +71,8 @@ frutas.forEach(function (valorDoElement, indiceDoElement){
 
 /* forEach só funciona com array */
 
+/* --------------------------------------------  */
+
+// For classico - Geralmente funciona com iteraveis (array ou strings)
+// For in - Retorna o indice ou chave ( strings, arrays and objects)
+// For of - Retorna o valor em si ( iteraveis, arrays or strings)
