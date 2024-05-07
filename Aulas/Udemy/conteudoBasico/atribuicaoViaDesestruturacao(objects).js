@@ -37,7 +37,7 @@ console.log("----------------------------------------------------------------")
 /* atribuindo via desestruturacao com Objects */
 
 const pessoa = {
-    /* nome: 'Robert', */
+    nome: 'Robert', 
     sobrenome: 'Gabriel',
     idade: 21,
 
@@ -47,24 +47,20 @@ const pessoa = {
     }
 }
 
-console.log(pessoa.nome)
-
 // Atribuição via desestruturação 
 const { nome, sobrenome, idade } = pessoa
 console.log(nome, sobrenome, idade)
 
-const { nome: nomE = 'opa' } = pessoa
-console.log(nome1)
+const { nome: nom1 = 'opa' } = pessoa
+console.log(nom1)
 
 /* Para atribuir o valor de uma variavel dentro do object em outra variavel */
 // const { nome: name1, idade: yearOld  } = pessoa
 // console.log(name1, yearOld)
 
+const {endereco: {rua, numero}, endereco} = pessoa
+console.log(endereco, rua, numero)
 
+const {nome: nomE , ...resto1} = pessoa;
 
-const info_para_contato = {
-    
-    telefone: "(11) 98115-5590",
-    email: "robertgff7@gmail.com"
-    
-}
+console.log(nomE, resto1);

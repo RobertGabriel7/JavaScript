@@ -14,7 +14,7 @@ body {
 } 
 
 #container {
-  max-width: 750px;
+  width: 750px;
   margin: 50px; 
   background: white;
   padding: 20px;
