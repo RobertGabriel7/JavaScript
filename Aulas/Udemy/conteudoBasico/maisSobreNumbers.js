@@ -37,3 +37,8 @@ console.log(Math.min(num))
 /* Números aleatorios */
 
 console.log(Math.random(1, 20))
+
+// Gerando um número aleatório inteiro entre 0 e 9
+let numeroAleatorio = Math.floor(Math.random() * 10);
+console.log("Número aleatório entre 0 e 9:", numeroAleatorio);
+
