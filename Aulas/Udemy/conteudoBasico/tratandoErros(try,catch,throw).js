@@ -16,11 +16,15 @@ console.log("-------------- Para capturar um erro --------------")
 
 function soma(x, y){
     if(typeof x !== "number" || typeof y !== "number"){
+        
+        // Ou seja, caso ocorra alguma exceção no try, o throw vai enviar uma mensagem de erro para o catch informando que aconteceu algo e o catch vai tratar esse erro.
         // Mensagem de erro, ao inves do erro do js no terminal
         
         // throw("x e y precisam ser numeros.")
 
         // Para mostrar a mensagem e o erro igual do JS, com a linha e o endereço do arquivo que ocorreu o erro.
+        
+        // O objetivo principal do throw é permitir que você notifique o código que está lidando com a execução (geralmente no bloco catch) que algo inesperado aconteceu e requer atenção especial.
 
         // new Error é uma function construtora do JS
         // throw = lançar
