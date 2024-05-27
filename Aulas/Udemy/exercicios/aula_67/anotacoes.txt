@@ -1,0 +1,113 @@
+O código que fiz:
+
+function ListaDeTarefas (){
+
+    let botaoAddTarefa = document.querySelector(".btAdicionarTarefa")
+    let inputTarefa =document.querySelector(".adicionarTarefa")
+    let tarefas = []
+
+    //  Para limpar o input
+    function limparInput(){
+        inputTarefa.value = "";
+        // .focus() para deixar o ponteiro no input 
+        inputTarefa.focus();
+    }
+    let teste = []
+    teste = adicionarTarefasSalvas();
+
+    for (valores011 of teste){
+        tarefas.push(valores011)
+    }
+    console.log(tarefas + "-------- opa")
+    
+    // Function para adicionar itens a tarefa
+    function addTarefa(valor22){
+
+        let lista = document.querySelector(".lista")    
+        let tarefa = document.querySelector("#adicionarTarefa").value   
+
+        console.log(`Valores passados: ${valor22}`)
+        console.log(typeof valor22)
+
+        // Verifica se tem algum valor no campo 'input'
+        if (tarefa !== ""){
+            
+            let div = document.createElement("div")
+            let li = document.createElement("li")
+            let botao = document.createElement("input")
+
+            botao.type = "button";
+            botao.value = "Remover";
+            botao.className = "btRemover"
+            
+            tarefas.push(tarefa + " ")
+            div.className = "div01"
+        
+            li.textContent = tarefa
+            lista.appendChild(div)
+            div.appendChild(li)
+            li.appendChild(botao)
+            
+            // Function 
+            limparInput();
+
+            botao.addEventListener("click", function(){
+                if (document.querySelector(".btRemover")){
+                    div.remove()
+                    botao.remove()
+                    salvarAsTarefas()
+                }else{
+                    alert("Não foi possivel excluir o item da lista de tarefas.")
+                }
+            })
+        }else{
+            alert("Insira informações.")
+        }
+    }
+
+    for (let n = 0; n < tarefas.length; n++){
+        console.log(`Indice: ${n}, array: ${tarefas[n]}`)
+        let valorzinho = tarefas[n]
+        addTarefa(valorzinho)
+    }
+
+    botaoAddTarefa.addEventListener("click", function(e){
+        // A propriedade event.target retorna o elemento DOM que desencadeou o evento
+        console.log("BackEnd: Click funcionou")
+        addTarefa();
+        salvarAsTarefas()
+    })
+
+    inputTarefa.addEventListener("keypress", function(event){
+        
+        if (event.key === "Enter"){
+            addTarefa();
+            salvarAsTarefas();
+        }else{
+            console.log("")
+        }
+    })
+
+    function salvarAsTarefas(){ 
+        let liTarefas = document.querySelectorAll("li")
+        let listinhaDeTarefas = [];
+    
+        for (let valoresDaTarefa of liTarefas){
+            let tarefaTexto = valoresDaTarefa.innerText;
+            listinhaDeTarefas.push(tarefaTexto)
+            // console.log(listinhaDeTarefas)
+        }
+        // Para salvar valores de um array e depois acessa-los
+        const tarefasJSON = JSON.stringify(listinhaDeTarefas)
+        // localStorage´
+        localStorage.setItem("tarefas", tarefasJSON)
+    }
+
+}
+ListaDeTarefas();
+
+function adicionarTarefasSalvas(){
+    const tarefas = localStorage.getItem('tarefas')
+    const listaDeTarefaS = JSON.parse(tarefas)
+    return listaDeTarefaS
+}
